@@ -1,4 +1,4 @@
-FROM hashicorp/packer:1.4.2 as packer
+FROM hashicorp/packer:1.8.0 as packer
 FROM ghcr.io/arvatoaws-labs/sfn-ng:main as sfn-ng
 
 FROM chef/chefdk:4.8.38
