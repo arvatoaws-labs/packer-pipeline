@@ -1,7 +1,7 @@
 FROM hashicorp/packer:latest as packer
 FROM ghcr.io/arvatoaws-labs/sfn-ng:main as sfn-ng
 
-FROM chef/chefdk:4.8.38
+FROM ghcr.io/arvatoaws/chef-workstation:latest
 
 COPY --from=packer /bin/packer /bin
 COPY --from=sfn-ng /usr/bin/sfn-ng /usr/bin
